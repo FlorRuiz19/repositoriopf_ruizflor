@@ -4,7 +4,7 @@ public class Programapf {
      public static void main(String[] args){
         // declarar variable
         String vendedor;
-        Double v1,v2,v3,sm,cm,sn;
+        Double v1,v2,v3,v4,sm,cm,sn;
         Scanner lectura=new Scanner(System.in);
         //entrada de datos
         System.out.println("Nombre de vendedor");
@@ -15,10 +15,12 @@ public class Programapf {
         v2=lectura.nextDouble();
         System.out.println("Ventas 3");
         v3=lectura.nextDouble();
+         System.out.println("Ventas 4");
+        v4=lectura.nextDouble();
         System.out.println("Sueldo mensual");
         sm=lectura.nextDouble();
         //proceso de datos
-        cm=(v1+v2+v3)*0.1;
+        cm=(v1+v2+v3+v4)*0.1;
         sn=sm+cm;
         //salidad de datos
         System.out.println("La comision de ventas es:"+cm);
